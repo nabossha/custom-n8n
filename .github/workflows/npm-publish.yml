@@ -16,6 +16,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        
+      - name: Saving workflow artifacts 📦
+        uses: actions/upload-artifact@v3
+        with:
+          name: application-build
+          retention-days: 1
 
       # Add your build or test scripts here
       # - name: Run tests
