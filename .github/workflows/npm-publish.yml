@@ -22,6 +22,7 @@ jobs:
         with:
           name: application-build
           retention-days: 1
+          path: .
 
       # Add your build or test scripts here
       # - name: Run tests
