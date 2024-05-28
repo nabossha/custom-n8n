@@ -18,7 +18,7 @@ jobs:
         run: npm install
         
       - name: prepublishOnly
-        run: npm prepublishOnly
+        run: npm run prepublishOnly
 
       - name: Compressing artifacts 🗜
         run: zip -r -q artifacts.zip .
